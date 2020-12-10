@@ -21,9 +21,12 @@
   },
   "homepage": "https://github.com/oloomoses/weatherApp#readme",
   "devDependencies": {
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^6.0.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "process": "^0.11.10",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.9.0",
