@@ -8,9 +8,20 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+
   plugins: [
     new webpack.DefinePlugin({
       'process.env': JSON.stringify(dotenv.config().parsed), // it will automatically pick up key values from .env file
     }),
   ],
+
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+
 };
