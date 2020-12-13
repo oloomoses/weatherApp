@@ -9,19 +9,19 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+
   plugins: [
     new webpack.DefinePlugin({
       'process.env': JSON.stringify(dotenv.config().parsed), // it will automatically pick up key values from .env file
     }),
   ],
-
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
-  },
 
 };

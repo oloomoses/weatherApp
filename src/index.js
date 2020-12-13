@@ -1,11 +1,10 @@
-// import getLocationData from './locationData';
 import './style.css';
-import 'bootstrap';
-// const showData = () => {
-//   getLocationData('Nairobi')
-//     .then(response => {
-//       console.log(response);
-//     });
-// };
+import 'bootstrap/dist/css/bootstrap.min.css';
+import UI from './ui';
 
-// showData();
+document.addEventListener('DOMContentLoaded', UI.searchFrom());
+
+document.querySelector('form').addEventListener('submit', (e) => {
+  UI.showData();
+  e.preventDefault();
+});
