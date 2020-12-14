@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.form-data {
+  margin-top: 25%;
+}
+
+.weather-info {
+  border: 1px solid green;
+  border-radius: 5px;
+  height: 500px;
+  width: 400px;
+  margin-top: 10%;
+  padding: 30px;
+}
+
+.location-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.temperature {
+  font-size: 50px;
+}
