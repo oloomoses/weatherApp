@@ -66,7 +66,9 @@ repository from github to try it.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
+* clone the repo using `git clone git@github.com:oloomoses/weatherApp.git` command
+* create a .env file in the root directory and add your api key in the format `API_KEY=YourOpenWeatherMapAPI_KEY`
+* In you dir folder, open index.html in your browser
 * Type the city name in the search form and press Enter
 
 ## Author
