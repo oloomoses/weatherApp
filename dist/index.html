@@ -15,16 +15,29 @@
         </div>
 
         <div class="weather-info text-center">
-          <div class="location-name">Nairobi, KE</div>
+          <div class="location-name"></div>
           <div class="time">Today</div><hr>
-          <div class="temperature my-4">20&deg;C</div>
-          <div class="other-conditions d-flex justify-content-between">
-            <div class="feels-like">Feels like: 80&deg;</div> |
-            <div class="humidity">Humidity: </div>  |
-            <div class="wind">Wind: </div>
+          <div class="temperature my-4">
+            <div class="temp"></div>
+            <div class="desc"></div>
+          </div>
+          <div class="other-conditions d-flex justify-content-between my-4">
+            <div class="feels-like mx-2"></div> |
+            <div class="humidity mx-2"></div> |
+            <div class="wind"></div>
 
           </div>
 
+          <label class="switch mt-5">
+            <input type="checkbox" switch />
+            <span class="slider round">
+              <div>
+                <span>C</span>
+                <span>F</span>
+              </div>
+            </span>
+          </label>
+          <div class="">Switch between Celsius/Fahrenheit</div>
         </div>
     </div>
   </div>
