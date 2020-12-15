@@ -1,6 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  color: white;
+}
+
+body {
+  background: url('./images/default.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 .form-data {
@@ -11,7 +19,7 @@
   border: 1px solid green;
   border-radius: 5px;
   height: 500px;
-  width: 400px;
+  min-width: 400px;
   margin-top: 10%;
   padding: 30px;
 }
@@ -25,7 +33,6 @@
   font-size: 50px;
 }
 
-/* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
@@ -33,14 +40,12 @@
   height: 24px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -79,7 +84,6 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }

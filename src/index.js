@@ -2,7 +2,6 @@ import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import UI from './ui';
 
-// document.addEventListener('DOMContentLoaded', UI.searchFrom());
 
 UI.searchFrom();
 

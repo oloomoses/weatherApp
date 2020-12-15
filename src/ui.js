@@ -1,8 +1,11 @@
 import getLocationData from './locationData';
+import clear from './images/clear.jpg';
+import cloud from './images/cloud.jpg';
+import rain from './images/rain.jpg';
+import defaultImg from './images/default.jpg';
 
 class UI {
   static searchFrom() {
-    // const content = document.querySelector('.content');
     const form = document.querySelector('form');
 
     const input = `<input class="form-control mr-sm-2 location-value" type="search" placeholder="Search" aria-label="Search">
@@ -14,7 +17,6 @@ class UI {
   static showData() {
     const location = document.querySelector('.location-value');
     const cityName = document.querySelector('.location-name');
-    // const dateTime = document.querySelector('.time');
     const temp = document.querySelector('.temp');
     const weatherDescription = document.querySelector('.desc');
     const feels = document.querySelector('.feels-like');
@@ -47,8 +49,7 @@ class UI {
             }, 200);
           }
         });
-
-        console.log(data);
+        UI.setBackground(data);
       })
       .catch(error => {
         errorDisp.innerHTML = error;
@@ -58,6 +59,26 @@ class UI {
   static toFahrenheit(temp) {
     temp = Math.round(temp * 1.8 + 32);
     return temp;
+  }
+
+  static setBackground(data) {
+    switch (data.weather[0].main) {
+      case 'Clear':
+        document.body.style.backgroundImage = `url("${clear}")`;
+        break;
+      case 'Clouds':
+        document.body.style.backgroundImage = `url("${cloud}")`;
+        break;
+      case 'Rain':
+      case 'Drizzle':
+      case 'Mist':
+        document.body.style.backgroundImage = `url("${rain}")`;
+        break;
+
+      default:
+        document.body.style.backgroundImage = `url("${defaultImg}")`;
+        break;
+    }
   }
 }
 
