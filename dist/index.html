@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-5">Get Weather</h1>
+    <div class="error alert alert-warning"></div>
+    
+
+
+    <div class="content row">
+        <div class="form-data col-6">
+          <h2>City Name</h2>
+          <form class="form-inline"></form>
+        </div>
+
+        <div class="weather-info text-center">
+          <div class="location-name"></div>
+          <div class="time">Today</div><hr>
+          <div class="temperature my-4">
+            <div class="temp"></div>
+            <div class="desc"></div>
+          </div>
+          <div class="other-conditions d-flex justify-content-between my-4">
+            <div class="feels-like mx-2"></div> |
+            <div class="humidity mx-2"></div> |
+            <div class="wind"></div>
+
+          </div>
+
+          <label class="switch mt-5">
+            <input type="checkbox" class="checked-switch"/>
+            <span class="slider round">
+              <div>
+                <span>C</span>
+                <span>F</span>
+              </div>
+            </span>
+          </label>
+          <div class="">Switch between Celsius/Fahrenheit</div>
+        </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
